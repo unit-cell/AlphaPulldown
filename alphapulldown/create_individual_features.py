@@ -250,7 +250,7 @@ def main(argv):
             sys.exit()
         else:
             pipeline = create_pipeline()
-            uniprot_database_path = os.path.join(FLAGS.data_dir, "uniprot/uniprot.fasta")
+            uniprot_database_path = os.path.join(FLAGS.data_dir, "uniprot/uniprot.fa")
             flags_dict.update({"uniprot_database_path": uniprot_database_path})
             if os.path.isfile(uniprot_database_path):
                 uniprot_runner = create_uniprot_runner(
